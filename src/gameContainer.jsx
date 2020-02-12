@@ -4,8 +4,15 @@ import GameBoard from "./GameBoard.jsx";
 
 class GameContainer extends Component {
   render() {
+    let styles={
+      width:"80vw",
+      margin:"auto",
+      border:"1px solid",
+      display: "flex",
+      justifyContent: "space-between",
+    }
     return (
-        <div>
+        <div style={styles}>
             <ShipContainer/>
             <GameBoard/>
         </div>
