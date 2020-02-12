@@ -6,6 +6,7 @@ class GameBox extends Component {
     this.state = {
       active: "false"
     }
+    this.shoot = this.shoot.bind(this);
   }
 
   shoot(){
@@ -35,7 +36,7 @@ class GameBox extends Component {
     };
 
     return (
-      <div style={styles} onClick={()=>this.shoot}>
+      <div style={styles} onClick={() => this.shoot()}>
       </div>
 
     );

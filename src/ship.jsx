@@ -17,7 +17,7 @@ class Ship extends Component {
     }
     render() {
         return (
-            <div onClick>
+            <div>
                 Ship:
         length: {this.props.length}
                 health: {this.state.health}

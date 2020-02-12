@@ -4,7 +4,7 @@ import GameBox from "./gamebox.jsx";
 class GameRow extends Component {
   render() {
     let styles= {
-      width: "inherit",
+      width: "320px",
       height: "30px",
       border: "1px solid",
     };
