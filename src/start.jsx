@@ -3,10 +3,10 @@ import PlayerTurn from "./playerTurn.jsx";
 import GameContainer from "./gameContainer";
 
 class StartScreen extends Component {
-  constructor(){
+  constructor(props){
     super(props);
     this.state = {
-      started: true,
+      started: false,
     }
   }
 
@@ -24,7 +24,7 @@ class StartScreen extends Component {
       let styles= {
           backgroundColor: "green",
           width: "100%",
-          height: "100%",
+          height: "100vh",
       };
 
       if(this.state.started){
