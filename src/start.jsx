@@ -9,9 +9,14 @@ class StartScreen extends Component {
     this.state = {
       started: false,
     }
+    // Get a reference to the database service
+    this.databaseRef = database.ref('/GameRooms')
   }
 
     newRoom(){
+      this.setState({
+        started: true
+      })
         console.log("Making new room");
 
     }
@@ -22,7 +27,7 @@ class StartScreen extends Component {
     }
 
     render() {
-      console.log(database.ref('GameRooms'));
+      console.log(this.databaseRef);
       let styles= {
           backgroundColor: "green",
           width: "100%",
@@ -40,7 +45,7 @@ class StartScreen extends Component {
       } else {
         return (
             <div style={styles}>
-            <button>New Room</button>
+            <button onClick={()=>this.newRoom()}>New Room</button>
             <button>Join Room</button>
             </div>
     

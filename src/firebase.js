@@ -1,6 +1,6 @@
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
-import * as firebase from "firebase/app";
+import firebase from "firebase";
 
 // Add the Firebase services that you want to use
 // import "firebase/auth";
@@ -17,9 +17,8 @@ const firebaseConfig = {
     measurementId: "G-HSNLLBB5SN"
   };
 
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-// Get a reference to the database service
 const database = firebase.database();
 
 export {database};
