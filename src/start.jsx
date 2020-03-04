@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PlayerTurn from "./playerTurn.jsx";
 import GameContainer from "./gameContainer";
+import {database} from "./firebase";
 
 class StartScreen extends Component {
   constructor(props){
@@ -21,6 +22,7 @@ class StartScreen extends Component {
     }
 
     render() {
+      console.log(database.ref('GameRooms'));
       let styles= {
           backgroundColor: "green",
           width: "100%",
