@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PlayerTurn from "./playerTurn.jsx";
 import GameContainer from "./gameContainer";
 import {database} from "./firebase";
+import createRoom from "./createRoom";
 
 class StartScreen extends Component {
   constructor(props){
@@ -11,13 +12,18 @@ class StartScreen extends Component {
     }
     // Get a reference to the database service
     this.databaseRef = database.ref('/GameRooms')
+    this.databaseRef.once("value").then((data) => {
+      const rooms = data.val();
+      console.log("rooms", rooms)
+    });
   }
 
-    newRoom(){
+    newRoom() {
       this.setState({
         started: true
       })
-        console.log("Making new room");
+      createRoom(this.databaseRef);
+      console.log("Making new room");
 
     }
 

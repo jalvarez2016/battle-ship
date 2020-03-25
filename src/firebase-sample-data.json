@@ -1,0 +1,61 @@
+{
+  "Player1": {
+    "ships": {
+      "ship1": {
+        "cord": "A1",
+        "orientation": "vertical"
+      },
+      "ship2": {
+        "cord": "B2",
+        "orientation": "horizontal"
+      },
+      "ship3": {
+        "cord": "C5",
+        "orientation": "vertical"
+      },
+      "ship4": {
+        "cord": "D4",
+        "orientation": "vertical"
+      },
+      "ship5": {
+        "cord": "A7",
+        "orientation": "horizontal"
+      }
+    },
+    "shots": [
+      "A1",
+      "A6",
+      "B1"
+    ]
+  },
+  "Player2": {
+    "ships": {
+      "ship1": {
+        "cord": "A4",
+        "orientation": "vertical"
+      },
+      "ship2": {
+        "cord": "A6",
+        "orientation": "vertical"
+      },
+      "ship3": {
+        "cord": "B8",
+        "orientation": "vertical"
+      },
+      "ship4": {
+        "cord": "E4",
+        "orientation": "horizontal"
+      },
+      "ship5": {
+        "cord": "C5",
+        "orientation": "vertical"
+      }
+    },
+    "shots": [
+      "B4",
+      "C4",
+      "A4"
+    ]
+  },
+  "WinLose": false
+}
