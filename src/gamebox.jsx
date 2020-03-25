@@ -4,7 +4,7 @@ class GameBox extends Component {
   constructor(props){
     super(props);
     this.state = {
-      active: "false"
+      active: false
     }
     this.shoot = this.shoot.bind(this);
   }
@@ -12,7 +12,7 @@ class GameBox extends Component {
   shoot(){
     console.log("hi");
     this.setState({
-      active: "true"
+      active: true
     });
   }
 
@@ -22,11 +22,12 @@ class GameBox extends Component {
       width: "30px",
       height: "30px",
       border: "1px solid",
+      color: "white",
       float: 'left'
     };
     
     if(this.state.active) {
-      let styles= {
+      styles= {
         width: "30px",
         height: "30px",
         backgroundColor: "red",
