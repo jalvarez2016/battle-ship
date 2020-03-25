@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import PlayerTurn from "./playerTurn.jsx";
-import GameContainer from "./gameContainer";
+import StartScreen from "./start";
 import './App.css';
 // import * as firebase from "firebase/app";
 
@@ -12,10 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <PlayerTurn/>
-      <GameContainer/>
-    </div>
+    <StartScreen/>
   );
 }
 
