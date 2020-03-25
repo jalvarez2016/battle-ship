@@ -46,7 +46,7 @@ class StartScreen extends Component {
         return (
             <div style={styles}>
             <button onClick={()=>this.newRoom()}>New Room</button>
-            <button>Join Room</button>
+            <button onClick={()=>this.joinRoom()}>Join Room</button>
             </div>
     
         );
